@@ -45,6 +45,7 @@ exports.create = function(req, res) {
 
     user.save(function(err) {
 
+	console.log('user save', err);
 
         if(_.isEmpty(err)){
             console.log('[USER][CREATE]['+user.email+'] Usuario criado ', user._id);
